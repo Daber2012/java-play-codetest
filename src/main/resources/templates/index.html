@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring application</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>
+    <style media="screen" type="text/css">
+        .container {
+            position: relative;
+            height: 14rem;
+        }
+
+        .jumbotron {
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border: darkred;
+        }
+    </style>
+</head>
+<body>
+<div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+        <form th:action="@{/}" method="post" enctype="multipart/form-data" id="sortForm" class="md-form">
+            <div class="form-group">
+                <h4 style="color:#3e54ff; font-weight: bold;">Choose file</h4>
+                <div class="btn-group row">
+                    <label class="btn btn-info">
+                        Browse&hellip; <input name="file" type="file" style="display: none;">
+                    </label>
+                    <input type="submit" class="btn btn-primary" style="height:38px;"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="/webjars/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

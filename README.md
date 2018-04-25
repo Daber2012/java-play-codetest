@@ -1,3 +1,5 @@
+Run with command > mvn spring-boot:run  
+
 # Qudini web developer code test
 
 To test how quickly you can pick up a new project and follow requirements we ask candidates to do the following project. You have a choice of web frameworks you can use: 
